@@ -1,0 +1,24 @@
+package footbag;
+
+public class Map {
+	private int width;
+	private int height;
+	private Dot[][] dots;
+	
+	public Map ( int width, int height){
+		dots = new Dot[width][height];
+		
+		for(int i = 0; i < width; i++){
+			for(int j = 0; j < height; j++){
+				dots[i][j] = new Dot((byte)0, 1.0f);
+			}
+		}
+		
+	}
+	
+	public Dot getDot(int x, int y){
+		return dots[x][y];
+	}
+	
+	
+}

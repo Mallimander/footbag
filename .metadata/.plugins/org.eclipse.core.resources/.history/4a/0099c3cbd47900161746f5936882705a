@@ -1,0 +1,28 @@
+package footbag;
+
+public class Entity {
+	private int x, y;
+	private Map dots;
+	
+	public Entity(int x, int y, int w, int h){
+		this.x = x;
+		this.y = y;
+		dots = new Map(w,h);
+		
+		dots.putDot(x, y, new Dot((byte)1, 1f));
+		
+	}
+	
+	
+	public int getX(){
+		return x;
+	}
+	
+	public int getY(){
+		return y;
+	}
+	
+	public Map getMap(){
+		return dots;
+	}
+}

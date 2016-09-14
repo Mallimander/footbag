@@ -1,0 +1,17 @@
+package footbag;
+
+public class DotUtil {
+
+	public DotUtil(){
+		
+	}
+	
+	public byte toByte(String str) {
+		byte temp = (byte)0;
+		
+		return temp;
+	}
+	
+	public 
+	
+}

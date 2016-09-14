@@ -1,0 +1,32 @@
+package footbag;
+
+public class Entity {
+	private int x, y;
+	private Map dots;
+//	private float[] color;
+	
+	public Entity(int x, int y, int w, int h){
+		this.x = x;
+		this.y = y;
+		dots = new Map(w,h);
+		
+		dots.putDot(0, 0, new Dot((byte)1, 1f));
+		dots.putDot(0, 1, new Dot((byte)1, 1f));
+		dots.putDot(1, 0, new Dot((byte)1, 1f));
+		dots.putDot(1, 1, new Dot((byte)1, 1f));
+		
+	}
+	
+	
+	public int getX(){
+		return x;
+	}
+	
+	public int getY(){
+		return y;
+	}
+	
+	public Map getMap(){
+		return dots;
+	}
+}
